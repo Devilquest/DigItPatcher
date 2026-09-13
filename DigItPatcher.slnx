@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DigItPatcher.App/DigItPatcher.App.csproj" />
+  <Project Path="DigItPatcher.Core/DigItPatcher.Core.csproj" />
+  <Project Path="DigItPatcher.Tests/DigItPatcher.Tests.csproj" />
+</Solution>

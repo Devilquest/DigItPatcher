@@ -1,0 +1,9 @@
+<!-- Role-based brushes mapping dynamic PatcherPalette colors to UI elements. -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="StateOkBrush" Color="{DynamicResource StateOkColor}" />
+    <SolidColorBrush x:Key="StateAttentionBrush" Color="{DynamicResource StateAttentionColor}" />
+    <SolidColorBrush x:Key="StateAlarmBrush" Color="{DynamicResource StateAlarmColor}" />
+
+</ResourceDictionary>

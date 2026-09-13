@@ -1,0 +1,30 @@
+<Project>
+
+  <PropertyGroup>
+    <!-- Declared once for App, Core and Tests: Core composes the same version into the game, so two
+         projects declaring it independently is the drift this placement prevents. -->
+    <Version>1.0.0</Version>
+    <Product>Dig It! Patcher</Product>
+    <Authors>Devilquest</Authors>
+    <!-- Off so the informational version stays the plain number a person can read out loud: the SDK
+         otherwise appends the source-control commit to it. -->
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- On so the compiler resolves every <see cref>. The .xml output itself is unused, and kept out of
+         a release: without these two it lands beside the executable as a file nobody asked for. -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishDocumentationFile>false</PublishDocumentationFile>
+    <PublishReferencesDocumentationFiles>false</PublishReferencesDocumentationFiles>
+
+    <!-- CS1591 and CS1573 contradict the comment standard: a public member of an internal type is not
+         public API, and a <param> per parameter is the restated-name skeleton the standard forbids. -->
+    <NoWarn>$(NoWarn);CS1591;CS1573</NoWarn>
+
+    <!-- A cross-reference that resolves to nothing reads perfectly in the source, so it survives
+         proofreading. These are the codes that catch one. -->
+    <WarningsAsErrors>$(WarningsAsErrors);CS1574;CS1580;CS1584;CS1570;CS0419</WarningsAsErrors>
+  </PropertyGroup>
+
+</Project>

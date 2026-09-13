@@ -1,0 +1,14 @@
+# Name
+Completion Percentage
+
+# What Is Wrong
+The completion percentage stops increasing long before the game is finished. Even after finishing every level and bonus stage, it still shows 42%.
+
+# Why It Happens
+The game keeps a single list of completed levels and reuses it for all four worlds, so completing a level in the caves also marks the matching level in the water, the snow, and the underworld. Half of each world's bonus stages overwrite the other half for the same reason.
+
+# What Changes
+Every level is now counted individually, so a full playthrough reaches 99%. The last 1% belongs to the boss, which the game never records: beating it goes straight to the ending, skipping the step that marks a level as completed.
+
+# Slab Line
+- Completion reaches 99%

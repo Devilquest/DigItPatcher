@@ -1,0 +1,14 @@
+# Name
+Sound Effects Volume
+
+# What Is Wrong
+In the Setup screen, setting sound effects to Off does not mute them; they keep playing just as loudly as at Max. Values from 10% to 90% lower their volume.
+
+# Why It Happens
+The game reads the lowest value as if it were the highest one, so it plays the effects at full volume instead of silencing them.
+
+# What Changes
+Choosing Off now turns the sound effects off completely, while every other value works exactly as it did before.
+
+# Slab Line
+- Sound effects can be muted

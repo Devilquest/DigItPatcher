@@ -1,0 +1,207 @@
+{
+  "builds": [
+    {
+      "id": "full",
+      "name": "Full release"
+    },
+    {
+      "id": "manaccom",
+      "name": "Full release, Manaccom edition"
+    },
+    {
+      "id": "shareware",
+      "name": "Shareware release"
+    }
+  ],
+  "files": [
+    {
+      "name": "DIGIT.EXE",
+      "known": [
+        {
+          "sha256": "7cfae5ee31298fba2abc4f10b33f983ad419186d3d12e989d2f40bf55c548f5e",
+          "builds": [
+            "full",
+            "manaccom"
+          ]
+        },
+        {
+          "sha256": "b04a0a1b96535532d016bb4753d29a8f72041781024291491554658e483b366e",
+          "builds": [
+            "shareware"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MAIN.EXE",
+      "known": [
+        {
+          "sha256": "ff8e4da7332e173692d529cd790ac6dc1f1f99bb2ac6a638afe11b64c7230820",
+          "builds": [
+            "full"
+          ]
+        },
+        {
+          "sha256": "7d151d0db8654f98857a7b5254f23147560d2acc601ca141de86b43d5fa9ec46",
+          "builds": [
+            "manaccom"
+          ]
+        },
+        {
+          "sha256": "acc88a12192229ca6d1466ddba3136a5579a74c1a0138cc2a545425dfded5c21",
+          "builds": [
+            "shareware"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DIGIT0.XRS",
+      "known": [
+        {
+          "sha256": "d31be8576962c521e092049b1bdbed91887ac7adbed0f13ad667a00242117e85",
+          "builds": [
+            "full"
+          ]
+        },
+        {
+          "sha256": "cc321b2604963f1fcec81b75b77db5b66619e98fd0963e41d21338d586be144e",
+          "builds": [
+            "manaccom"
+          ]
+        },
+        {
+          "sha256": "6e431174ee598b1938a70442323cd959eb6aceb40283f9ee1ff7e722c916a638",
+          "builds": [
+            "shareware"
+          ]
+        },
+        {
+          "sha256": "404550c7887844b350e4550832a42031e0361945e06970b937509eea706ede49",
+          "builds": [
+            "shareware"
+          ],
+          "damage": "duplicated-sectors"
+        }
+      ]
+    },
+    {
+      "name": "DIGIT1.XRS",
+      "known": [
+        {
+          "sha256": "3ecf93043e8d4bc33e6ac66db38558ef859e50705bf476c8f884a21dafc12861",
+          "builds": [
+            "full",
+            "manaccom"
+          ]
+        },
+        {
+          "sha256": "5d0ab379e28ebdff5e308485cff115209e28d05867153aed1b677517679699a1",
+          "builds": [
+            "shareware"
+          ]
+        },
+        {
+          "sha256": "a4c0478c4b5ae42c0bb6e3388fd40e8d822753462c6972888323a1647efde4a6",
+          "builds": [
+            "full",
+            "manaccom"
+          ],
+          "damage": "lost-sectors"
+        }
+      ]
+    },
+    {
+      "name": "DIGIT2.XRS",
+      "known": [
+        {
+          "sha256": "0cda22fafe842e6013018981632dadd0c29951cee1782311e4f2a4a53e1509ff",
+          "builds": [
+            "full",
+            "manaccom"
+          ]
+        },
+        {
+          "sha256": "67199c49aa35d59db1ba358bc4057955f8d8f22497fc50ab5d218d477ccda232",
+          "builds": [
+            "full",
+            "manaccom"
+          ],
+          "damage": "displaced-span"
+        }
+      ],
+      "absentIn": [
+        "shareware"
+      ]
+    },
+    {
+      "name": "DIGIT3.XRS",
+      "known": [
+        {
+          "sha256": "c7730fc551ed323dc83d69a6c4d80a0f4dc565399e98e0a3517f4cb0a417be0c",
+          "builds": [
+            "full",
+            "manaccom"
+          ]
+        }
+      ],
+      "absentIn": [
+        "shareware"
+      ]
+    },
+    {
+      "name": "DIGIT4.XRS",
+      "known": [
+        {
+          "sha256": "e1e1a3322884e6f9e969044fa150dd54a09a55366e59d2a54893903df8a10a3d",
+          "builds": [
+            "full",
+            "manaccom"
+          ]
+        }
+      ],
+      "absentIn": [
+        "shareware"
+      ]
+    },
+    {
+      "name": "DIGITX.XRS",
+      "known": [
+        {
+          "sha256": "706cc1135685c957b09dcf4934e7365c700f51879972d681412ee08f80d5b16d",
+          "builds": [
+            "full",
+            "manaccom",
+            "shareware"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DPMI16BI.OVL",
+      "known": [
+        {
+          "sha256": "afea669e007ff79c8c02b2ae8b3fc908c51b6a86c49f9cef1a9cd3f5ce9635ba",
+          "builds": [
+            "full",
+            "manaccom",
+            "shareware"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RTM.EXE",
+      "known": [
+        {
+          "sha256": "10acd85af3767634450a793f2af1e057de888621cbfc578d35d3fa91abc09661",
+          "builds": [
+            "full",
+            "manaccom",
+            "shareware"
+          ]
+        }
+      ]
+    }
+  ]
+}

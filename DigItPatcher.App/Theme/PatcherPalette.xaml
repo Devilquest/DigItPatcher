@@ -1,0 +1,15 @@
+<!-- Literal palette colors this application needs and Palette.xaml, which is shared verbatim with
+     Dig It! Explorer, does not carry. -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- A fix already applied, and a completed step in the log. -->
+    <Color x:Key="StateOkColor">#10B981</Color>
+
+    <!-- A fix this copy cannot receive, and a log line that reports something skipped. -->
+    <Color x:Key="StateAttentionColor">#D9A441</Color>
+
+    <!-- Bytes we do not recognize at a fix site, and a failed step in the log. -->
+    <Color x:Key="StateAlarmColor">#EF4444</Color>
+
+</ResourceDictionary>

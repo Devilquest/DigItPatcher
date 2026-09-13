@@ -1,0 +1,14 @@
+root = true
+
+# C10 enforcement. DigItPatcher.App is the executable, and nothing references it, so a `public` type
+# in it hides the real surface instead of declaring one. DigItPatcher.Core is a library whose
+# `public` surface is real API (consumed by the exe); DigItPatcher.Tests must keep test classes
+# public or xUnit stops discovering them. Both are excluded below.
+[*.cs]
+dotnet_diagnostic.CA1515.severity = warning
+
+[DigItPatcher.Core/**.cs]
+dotnet_diagnostic.CA1515.severity = none
+
+[DigItPatcher.Tests/**.cs]
+dotnet_diagnostic.CA1515.severity = none

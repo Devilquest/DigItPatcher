@@ -1,0 +1,8 @@
+# Heading
+Patch Notes
+
+# Credit
+Dig It! Bug Fixes {version} by
+
+# Author
+{author}
